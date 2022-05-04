@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+    <h1>Welcome to UrHell</h1>
+    <p id="about">
+        This is a URL Shortering page???
+    </p>
+
+    <form id="url_form" action="/" method="POST">
+        <label for="url">Enter URL</label>
+        <input name="url" value={{default}}>
+        <!-- <input name="result" value={{result}}> -->
+        <input type="submit">
+    </form>
+
+    <p>{{result}}</p>
+{% endblock %}
